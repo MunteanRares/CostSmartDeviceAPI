@@ -1,0 +1,6 @@
+@CostSmartDeviceApi_HostAddress = http://localhost:5222
+
+GET {{CostSmartDeviceApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
