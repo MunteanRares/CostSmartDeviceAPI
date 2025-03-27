@@ -32,6 +32,10 @@ namespace CostSmartDeviceApi.Migrations
                     b.Property<float>("Ampers")
                         .HasColumnType("real");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");

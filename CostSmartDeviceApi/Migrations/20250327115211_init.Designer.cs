@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CostSmartDeviceApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250326154654_init")]
+    [Migration("20250327115211_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -34,6 +34,10 @@ namespace CostSmartDeviceApi.Migrations
 
                     b.Property<float>("Ampers")
                         .HasColumnType("real");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()

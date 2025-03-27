@@ -17,6 +17,7 @@ namespace CostSmartDeviceApi.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    ImageUrl = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Volts = table.Column<float>(type: "real", nullable: false),
                     Ampers = table.Column<float>(type: "real", nullable: false),
